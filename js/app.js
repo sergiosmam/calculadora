@@ -100,8 +100,7 @@ var appCalculadora = ( function(){
         }
 
         function refrescar(){
-            alert(num1);
-            document.getElementById('display').innerHTML = num1.substr(0,9);
+            document.getElementById('display').innerHTML = num1;
         }    
     
   return {
