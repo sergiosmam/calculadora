@@ -7,6 +7,7 @@ var appCalculadora = ( function(){
     var num1 = 0;
     var num2 = 0;
     var count = 0;
+    var res = 0;
     var opera;
 
     var buttons = document.getElementsByClassName('tecla');
@@ -82,13 +83,13 @@ var appCalculadora = ( function(){
             num1 = parseFloat(num1);
             switch (opera){
                 case 1:
-                    num1 += num2;
+                    num1 = num1 + num2;
                 break;
                 case 2:
                     num1 = num2 - num1;
                 break;
                 case 3:
-                    num1 *= num2;
+                    num1 = num1 * num2;
                 break;
                 case 4:
                     num1 = num2 / num1;
